@@ -4,7 +4,10 @@ networks:
 
 services:
   nginx:
-    build: ./
+    build:
+      context: ./
+      args:
+        NGINX_TAG: ${NGINX_TAG-stable}
     restart: unless-stopped
     networks:
       - proxy
