@@ -13,7 +13,5 @@ services:
       - 443:443
     volumes:
       - ${VOLUME_PATH}/conf.d:/etc/nginx/conf.d
-      # - ${VOLUME_PATH}/etc/nginx/sites-available:/etc/nginx/sites-available
-      # - ${VOLUME_PATH}/etc/nginx/sites-enabled:/etc/nginx/sites-enabled
       - ${VOLUME_PATH}/etc/letsencrypt:/etc/letsencrypt
       - ${VOLUME_PATH}/tmp:/tmp
