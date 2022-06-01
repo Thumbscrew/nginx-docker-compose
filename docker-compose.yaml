@@ -16,5 +16,6 @@ services:
       - 443:443
     volumes:
       - ${VOLUME_PATH}/conf.d:/etc/nginx/conf.d
+      - ${VOLUME_PATH}/letsencrypt-acme-challenge:/data/letsencrypt-acme-challenge
       - ${VOLUME_PATH}/etc/letsencrypt:/etc/letsencrypt
       - ${VOLUME_PATH}/tmp:/tmp
