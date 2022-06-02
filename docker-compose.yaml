@@ -8,6 +8,11 @@ services:
       context: ./
       args:
         NGINX_TAG: ${NGINX_TAG-stable}
+    logging:
+      driver: "json-file"
+      options:
+        max-size: ${LOG_MAX_SIZE-100M}
+        max-file: ${LOG_MAX_FILE-3}
     restart: unless-stopped
     networks:
       - proxy
