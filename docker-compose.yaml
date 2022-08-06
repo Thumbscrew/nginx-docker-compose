@@ -23,4 +23,5 @@ services:
       - ${VOLUME_PATH}/conf.d:/etc/nginx/conf.d
       - ${VOLUME_PATH}/letsencrypt-acme-challenge:/data/letsencrypt-acme-challenge
       - ${VOLUME_PATH}/etc/letsencrypt:/etc/letsencrypt
+      - ${VOLUME_PATH}/etc/ssl:/etc/ssl
       - ${VOLUME_PATH}/tmp:/tmp
