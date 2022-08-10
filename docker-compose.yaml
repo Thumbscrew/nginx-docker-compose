@@ -25,3 +25,4 @@ services:
       - ${VOLUME_PATH}/etc/letsencrypt:/etc/letsencrypt
       - ${VOLUME_PATH}/etc/ssl:/etc/ssl
       - ${VOLUME_PATH}/tmp:/tmp
+      - ${VOLUME_PATH}/www:/etc/nginx/html
